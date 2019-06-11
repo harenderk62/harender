@@ -10,6 +10,7 @@
     position: sticky;
     top:0;
     z-index: 10;
+    
 }
 .navbar-brand img
 {
@@ -45,33 +46,35 @@
 /*------------slider----------------*/
 #slider
 {
-    width: 80%;
-    margin-left: 150px;
+    width: auto;
+    margin-left: auto;
 }
 .carousel-caption
 {
-    top:50%;
-    transform: translateY(-50%);
+    top:30%;
+    transform: translateY(300%);
     bottom: initial!important;
 }
 .carousel-caption h5
 {
     color: #fff;
-    font-size: 40px;
+    font-size: 50px;
 }
 /*-------------------About-----------------*/
 #about
 {   
-    
+    background: #efefef;
     padding-top: 50px;
     padding-bottom: 50px;
     color: #555;
     text-align: left;
+    font-size: 20;
 }
 #about h1
 {
     text-align: center;
     font-size: 50px;
+    
 }
 #about .btn
 {
@@ -83,20 +86,6 @@
     
     padding-top: 20px;
     
-}
-.skills-bar p
-{
-    margin-bottom: 6px;
-    font-weight: 600;
-}
-.progress-bar
-{
-    border-radius: 16px;
-}
-.progree
-{
-    border-radius: 16px !important;
-    margin-bottom: 20px;
 }
 #about .img-box
 {
@@ -120,6 +109,12 @@
 }
 #about h3
 {
+    color: black;
+    text-align: center;
+}
+#about p
+{
+    color: #555;
     text-align: center;
 }
 
@@ -156,15 +151,40 @@
 /*--------------Portfolio----------*/
 #portfolio
 {
-    background-image: linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.8)),url(services.jpeg);
+    
     background-size: cover;
     background-position: center;
     color: #efefef !important;
     background-attachment: fixed;
-    padding-top: 50px;
+    padding-top: 70px;
     padding-bottom: 50px;
+    height: 600px;
 }
-
+#portfolio .background-wrap 
+{
+    position: fixed;
+    z-index: -1000;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    top: 0;
+    left: 0;
+}
+			
+#video-bg-elem 
+{
+    position: fixed;
+    top: 0;
+    left: 0;
+ 
+}
+#portfolio .container
+{
+    position: static;
+    width: 100%;
+    min-height: 100%;
+    z-index: 1000;
+}
 #portfolio h1
 {
     text-align: center;
@@ -199,15 +219,43 @@
     margin-top: 20px;
     color: #ccc;
 }
-.portfolio .col-md-3:hover{
-    background: #999bff;
+.portfolio .port1:hover{
+    background-image: linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.8)),url(port/edu.jpg);
+    border-radius: 100px;
+    background-size: cover;
+    background-position: center;
     cursor: pointer;
-    transition: 0.7s;
+    transition: 1s;
+}
+.portfolio .port2:hover{
+    background-image: linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.8)),url(port/tec.jpg);
+    border-radius: 100px;
+    background-size: cover;
+    background-position: center;
+    cursor: pointer;
+    transition: 1s;
+}
+.portfolio .port3:hover{
+    background-image: linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.8)),url(port/des.jpg);
+    border-radius: 100px;
+    background-size: cover;
+    background-position: center;
+    cursor: pointer;
+    transition: 1s;
+}
+.portfolio .port4:hover{
+    background-image: linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.8)),url(port/res.jpg);
+    border-radius: 100px;
+    background-size: cover;
+    background-position: center;
+    cursor: pointer;
+    transition: 1s;
 }
 /*--------------Project-------------*/
 #project
 {
-    padding-top: 50px;
+    background: #efefef;
+    padding-top: 70px;
     padding-bottom: 50px;
     color: #555;
 }
@@ -296,7 +344,7 @@ h1::after{
 /*--------------Promo-----------*/
 #promo
 {
-    background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url(promo.jpeg);
+    background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url(promo.webp);
     background-size: cover;
     background-position: center;
     color: #fff;
@@ -309,123 +357,30 @@ h1::after{
 /*-----------------Gallery---------*/
 #price
 {
-    padding: 40px 0;
+    padding: 70px 0;
     background: #efefef;
     
 }
-.single-price
+#price .row
 {
-    margin: 10px auto;
-    display: inline;
-    float: left;
-    width: 100%;
-    background-color: #fff;
-    transition: 0.5s;
-    
-}
-.single-price:hover
-{
-    box-shadow: 0 2px 20px #333;
-}
-.price-head
-{
-    background-color: #2196f3;
-    display: inline;
-    float: left;
-    padding: 10px 5px;
-    text-align: center;
-    width: 100%;
-}
-.price-head h2
-{
-    color: #fff;
-    font-size: 30px;
-    font-weight: bold;
-    margin-bottom: 5px;
-    padding: 5px;
-    text-transform: uppercase;
-}
-.price-head p
-{
-    font-size: 25px;
-    color: #ccc;
-    font-weight: bold;
-    line-height: 30px;
-}
-#price span
-{
-    font-size: 15px;
-}
-.price-content
-{
-    display: inline;
-    float: left;
-    width: 100%;
-    padding: 0 15px;
-}
-.price-content ul li
-{
-    border-bottom: 1px solid #efefef;
-    padding: 15px 10px;
-    list-style: none;
-    
-}
-ul li:last-child
-{
-    border: none;
-}
-.fa-check
-{
-    color: green;
-    margin: 10px;
-    font-size: 20px;
-}
-.fa-times
-{
-    color: red;
-    margin: 10px;
-    font-size: 20px;
-}
-.price-button
-{
-    display: inline;
-    float: left;
-    padding: 15px 15px 15px;
-    text-align: center;
-    width: 100%;
-}
-.buy-btn
-{
-    background-color: #2196f3;
-    border-radius: 36px;
-    display: inline-block;
-    font-size: 18px;
-    padding: 15px 50px;
-    transition: 0.5s;
-    
-}
-.buy-btn:rover{
-    border-color: 1px solid #fff;
-    background-color: #3f51b5;
-}
-a
-{
-    text-decoration: none !important;
-    color: #fff!important;
+    padding-top: 50px;
+    padding-left: 50px;
 }
 
 /*-------------------get in touch--------------*/
 #contact
 {
-    background: #efefef;
+    background-image: linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.8));
     padding-top: 40px;
     padding-bottom: 40px;
-    color: #777;
+}
+.text-center
+{
+    color: #efefef !important;
 }
 .contact-form
 {
     padding: 15px;
-    
 }
 .form-control
 {
@@ -445,6 +400,12 @@ a
     background: #333;
     color: #fff;
     padding: 12px;
+}
+.follow
+{
+    font-size: 25px;
+    padding-left: 50px;
+
 }
 .fa-heart-o
 {
