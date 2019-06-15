@@ -161,18 +161,7 @@
     transition: 0.5s;
 }*/
 /*--------------Portfolio----------*/
-#portfolio
-{
-    
-    background-size: cover;
-    background-position: center;
-    color: #efefef !important;
-    background-attachment: fixed;
-    padding-top: 70px;
-    padding-bottom: 50px;
-    height: 600px;
-}
-#portfolio .background-wrap 
+.background-wrap 
 {
     position: fixed;
     z-index: -1000;
@@ -190,6 +179,17 @@
     left: 0;
  
 }
+#portfolio
+{
+    
+    background-size: cover;
+    background-position: center;
+    color: #efefef !important;
+    background-attachment: fixed;
+    padding-top: 70px;
+    padding-bottom: 50px;
+}
+
 #portfolio .container
 {
     position: static;
