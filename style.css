@@ -121,7 +121,7 @@
 }
 #about h3
 {
-    color: black;
+    color: rgb(0,0,0);
     text-align: center;
 }
 #about p
@@ -419,13 +419,11 @@ h1::after{
     color: #999 !important;
 }
 
-
-
 /*-----------------footer-------------*/
 #footer
 {
     background: #333;
-    color: #fff;
+    color: white;
     padding: 12px;
 }
 .follow
